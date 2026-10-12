@@ -167,66 +167,15 @@ h1 {
 
 .illustration {
   width: 100%;
-  max-width: 440px;
+  max-width: 420px;
   justify-self: end;
 }
 
-.connection {
+.outage-art {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.guide {
-  stroke: var(--line);
-  stroke-width: 1;
-  stroke-dasharray: 2 6;
-}
-
-.cloud {
-  fill: var(--canvas);
-  stroke: var(--primary);
-  stroke-width: 2.5;
-  stroke-linejoin: round;
-}
-
-.cloud-line,
-.connector,
-.server-line {
-  stroke: var(--primary);
-  stroke-width: 2.5;
-  stroke-linecap: round;
-}
-
-.connection-break {
-  stroke: var(--warning-text);
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.server {
-  fill: #fff;
-  stroke: var(--primary);
-  stroke-width: 2.5;
-}
-
-.server-detail {
-  fill: var(--primary);
-}
-
-.warning-surface {
-  fill: var(--warning-surface);
-}
-
-.warning-mark {
-  stroke: var(--warning-text);
-  stroke-width: 2.5;
-  stroke-linecap: round;
-}
-
-.warning-dot {
-  fill: var(--warning-text);
+  object-fit: contain;
 }
 
 .footer {
@@ -316,19 +265,8 @@ h1 {
   }
 
   .illustration {
-    width: 184px;
-    height: 142px;
+    width: 176px;
     align-self: flex-start;
-    overflow: hidden;
-    margin-left: -21px;
-  }
-
-  .connection {
-    width: 184px;
-  }
-
-  .guide {
-    display: none;
   }
 
   h1 {

@@ -1,0 +1,9 @@
+# Иллюстрация временной недоступности
+
+Финальный файл: `assets/cloud-connection.webp` (960 × 960, прозрачный фон).
+Создан встроенным imagegen; WebP подготовлен из оригинального PNG через cwebp.
+Иллюстрация декоративная: сообщение об аварии остаётся в доступном HTML-тексте.
+
+## Промпт
+
+Use case: stylized-concept. Asset type: polished compact illustration for Agnostic's temporary service outage webpage. Create a brand-new standalone illustration, not a webpage screenshot. A refined minimal physical 3D composition about a temporarily interrupted cloud connection. One softly sculpted white ceramic cloud, a small pale silver server appliance below it, and two beautifully shaped Agnostic blue (#006DFF) cable connectors separated by a clearly visible short gap. The interruption should feel calm and understandable, not broken violently. Build a deliberate cohesive still life: cloud and server close together, connectors as the blue visual focus, all three elements clearly readable at 180 pixels wide. Gentle three-quarter isometric view, careful bevels, tactile matte materials, subtle real ambient occlusion and soft neutral contact shadows, elegant industrial product illustration. Restrained palette: white, pale cool gray #F3F5F8, silver and exact clean saturated blue #006DFF. Transparent background; no platform, no outer box, no gradient backdrop. Center the full uncropped composition with about 10% breathing room; compact almost-square proportions. No text, no logo, no UI panels, no decorative dashed grid, no zigzag lightning, no exclamation badge, no status lights or data metrics, no floating dots, no glass, no glow, no cartoon faces, no people, no plants. The cloud must be sculpturally refined and the server simple and credible. Crisp high quality edges and transparent alpha.
