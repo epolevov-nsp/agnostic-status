@@ -1,0 +1,13 @@
+{
+  "name": "agnostic-status",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Agnostic outage page",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

@@ -1,0 +1,35 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1024 1024"
+  role="img"
+  aria-labelledby="agnosticAppIconTitle agnosticAppIconDescription"
+>
+  <title id="agnosticAppIconTitle">Agnostic app icon</title>
+  <desc id="agnosticAppIconDescription">
+    A white lowercase Agnostic mark with a silver folded corner on a rounded
+    Agnostic Blue square.
+  </desc>
+  <rect
+    id="icon-background"
+    width="1024"
+    height="1024"
+    rx="224"
+    fill="#006DFF"
+  />
+  <g
+    id="icon-mark"
+    transform="translate(-153 -124) scale(1.062)"
+    shape-rendering="geometricPrecision"
+  >
+    <path
+      id="icon-mark-body"
+      fill="#FFFFFF"
+      d="M623 266.96C443.75 257.19 290.1 421.19 303.24 600C290.48 777.26 442.64 941.09 623 929.93C679.44 937.8 755.21 918.15 755.72 850C760.03 812.34 728.8 775.08 690 775.6C663.33 775.4 636.65 776.08 610 775.03C515.88 777.86 441.45 692.42 450.82 600C442.02 501.29 528.26 417.43 626 427.21C703.66 421.69 785.18 470.46 797 551.57C808.21 648.75 799.33 747.99 802.18 846C799.39 887.55 832.91 929.97 876 929.83C919.28 930.57 953.28 887.7 949.94 846C949.87 764 949.9 682 949.93 600C948.93 550.67 945.52 499.87 925.97 455C888.42 385.17 827.18 323.68 757.74 286C715.61 270.86 668.77 266.79 623 266.96Z"
+    />
+    <path
+      id="icon-foil"
+      fill="#D8DEE8"
+      d="M759 285.5C825.33 323.28 901.32 394.99 928.5 463C901.85 424.9 849.96 441.27 811 430.5C799.88 427.22 789.41 416.94 785.5 406C775.41 366.81 777.43 319.14 759 285.5Z"
+    />
+  </g>
+</svg>

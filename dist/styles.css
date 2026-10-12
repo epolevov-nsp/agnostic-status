@@ -1,0 +1,369 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/InterVariable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --primary: #006dff;
+  --primary-hover: #005bd6;
+  --canvas: #f3f5f8;
+  --foreground: #111827;
+  --secondary: #5b6472;
+  --surface-hover: #e9edf3;
+  --line: #e0e6ee;
+  --warning-surface: #fff9f0;
+  --warning-text: #92400e;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 280px;
+  background: var(--canvas);
+  color: var(--foreground);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100svh - 24px);
+  margin: 12px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.header,
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 48px;
+}
+
+.header {
+  padding-top: 32px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
+.brand img {
+  display: block;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 56px;
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 72px 48px 80px;
+}
+
+.message {
+  max-width: 540px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(32px, 3.3vw, 44px);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  text-wrap: balance;
+}
+
+.description {
+  margin: 24px 0 0;
+  max-width: 470px;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.recovery {
+  margin: 14px 0 0;
+  max-width: 470px;
+  color: var(--secondary);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.button-primary {
+  color: #fff;
+  background: var(--primary);
+}
+
+.button-primary:hover {
+  background: var(--primary-hover);
+}
+
+.button-secondary {
+  color: var(--secondary);
+  background: var(--canvas);
+}
+
+.button-secondary:hover {
+  color: var(--foreground);
+  background: var(--surface-hover);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.button svg {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 440px;
+  justify-self: end;
+}
+
+.connection {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.guide {
+  stroke: var(--line);
+  stroke-width: 1;
+  stroke-dasharray: 2 6;
+}
+
+.cloud {
+  fill: var(--canvas);
+  stroke: var(--primary);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.cloud-line,
+.connector,
+.server-line {
+  stroke: var(--primary);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.connection-break {
+  stroke: var(--warning-text);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.server {
+  fill: #fff;
+  stroke: var(--primary);
+  stroke-width: 2.5;
+}
+
+.server-detail {
+  fill: var(--primary);
+}
+
+.warning-surface {
+  fill: var(--warning-surface);
+}
+
+.warning-mark {
+  stroke: var(--warning-text);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.warning-dot {
+  fill: var(--warning-text);
+}
+
+.footer {
+  padding-bottom: 28px;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (min-width: 1200px) {
+  .actions {
+    flex-wrap: nowrap;
+  }
+
+  .button {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 800px) {
+  .header,
+  .footer {
+    padding-inline: 32px;
+  }
+
+  .main {
+    gap: 20px;
+    padding-inline: 32px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .page {
+    min-height: calc(100svh - 16px);
+    margin: 8px;
+    border-radius: 20px;
+  }
+
+  .header,
+  .footer {
+    padding-inline: 24px;
+  }
+
+  .header {
+    padding-top: 24px;
+  }
+
+  .brand {
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  .brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    padding: 28px 24px 40px;
+  }
+
+  .illustration {
+    width: 184px;
+    height: 142px;
+    align-self: flex-start;
+    overflow: hidden;
+    margin-left: -21px;
+  }
+
+  .connection {
+    width: 184px;
+  }
+
+  .guide {
+    display: none;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .recovery {
+    margin-top: 12px;
+  }
+
+  .actions {
+    margin-top: 24px;
+  }
+
+  .footer {
+    padding-bottom: 24px;
+  }
+
+  .footer p {
+    max-width: 290px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
